@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project A</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://kit.fontawesome.com/8dbd72d53e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <!--navbar -->
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/log.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li> <a href="#header">Home</a></li>
+                        <li> <a href="#about">About</a></li>
+                        <li> <a href="#services">Services</a></li>
+                        <li> <a href="#portfolio">Portfolio</a></li>
+                        <li> <a href="#contact">Contanct</a></li>
+                        <i class="fas fa-solid fa-x" onclick="closemenu()"></i>
+                    </ul>
+                    <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+
+                <div class="header-text">
+                    <p>Full Stack Developer</p>
+                    <h1>Hi, I'm <span>Mat</span> Laurio <br> from the Philippines</h1>
+                </div>
+
+            </div>
+        </div>
+<!--about section-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/mat.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub">About Me</h1>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi perferendis voluptates et nam, quo error asperiores voluptas unde alias necessitatibus ipsam reprehenderit cumque tempora? Inventore, architecto. Maxime, obcaecati beatae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit iusto ea error pariatur provident quam, quia tempora sapiente, iure laborum maiores, fuga a laudantium delectus commodi. Amet placeat recusandae veritatis!
+                        </p>
+
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')" >Experience</p>
+                            <p class="tab-links" onclick="opentab('hobby')" >Hobby</p>
+                        </div>
+                        <div class="tab-contents  active-tab" id="skills">
+                            <ul>
+                                <li><span>Photo Editing</span><br>  Adobe Photoshop</li>
+                                <li><span>Web App Development</span><br> Designing Web/App Front End</li>
+                                <li><span>Web Design</span> <br> Designing Web/App Back End</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents " id="experience">
+                            <ul>
+                                <li><span>Valor Global</span><br>  Customer Service Representative</li>
+                                <li><span>Alorica</span><br> Customer Service Representative</li>
+                                <li><span>Iqor</span> <br> Customer Service Representative</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="hobby">
+                            <ul>
+                                <li><span>Playing Video Games</span><br>  Valorant, Mobile Legends, etc.</li>
+                                <li><span>Riding Motorcycles</span><br> Sports bike, Classic bike, Underbone bike</li>
+                                <li><span>Streaming</span> <br> Facebook Streaming</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Services section-->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub">My Services</h1>
+                    <div class="services-list">
+                        <div>
+                            
+                            <h2>Web Design</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi accusantium voluptates eaque, deleniti itaque sunt ullam fugiat. Reprehenderit temporibus aut esse. Accusantium cupiditate repellat ab! Nobis laboriosam unde amet architecto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci nobis aspernatur, aliquam distinctio deserunt cupiditate, deleniti temporibus architecto recusandae quo impedit voluptatum atque exercitationem error modi quam, facilis voluptas. Minima.</p>
+                            <a href="WDP20_EXERCISE 09_LAURIO/movies.html" target="_blank">Sample Here</a>
+                        </div>
+                        <div>
+                           
+                            <h2>Photo Editing</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi accusantium voluptates eaque, deleniti itaque sunt ullam fugiat. Reprehenderit temporibus aut esse. Accusantium cupiditate repellat ab! Nobis laboriosam unde amet architecto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci nobis aspernatur, aliquam distinctio deserunt cupiditate, deleniti temporibus architecto recusandae quo impedit voluptatum atque exercitationem error modi quam, facilis voluptas. Minima.</p>
+                            <a href="">Sample Here </a>
+                        </div>
+
+                        <div>
+                            <h2>App Design</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi accusantium voluptates eaque, deleniti itaque sunt ullam fugiat. Reprehenderit temporibus aut esse. Accusantium cupiditate repellat ab! Nobis laboriosam unde amet architecto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci nobis aspernatur, aliquam distinctio deserunt cupiditate, deleniti temporibus architecto recusandae quo impedit voluptatum atque exercitationem error modi quam, facilis voluptas. Minima.</p>
+                            <a href="">Sample Here</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+        <!--portfolio section-->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/movie.jpg" >
+                        <div class="layer">
+                            <h3>Movie Website</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nostrum aperiam sunt necessitatibus adipisci dicta qui officia debitis perferendis ad, doloremque ex deleniti? Cumque voluptatum temporibus dicta possimus architecto libero.</p>
+                            <a href="WDP20_EXERCISE 09_LAURIO/WD20_EXERCISE_09_LAURIO.html" target="_blank">Link Here</a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/moto.jpg" >
+                        <div class="layer">
+                        <h3>MotoWeb</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptates. Repellendus, suscipit in nam quae velit necessitatibus inventore placeat ipsum architecto quo possimus neque deserunt? Ex ducimus deserunt dignissimos odio.</p>
+                            <a href="bike.html" target="_blank">Link Here</a>
+                    </div>
+                </div>
+                    <div class="work">
+                        <img src="images/work-3.png" >
+                        <div class="layer">
+                        <h3>Online Shopping App</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, voluptates. Repellendus, suscipit in nam quae velit necessitatibus inventore placeat ipsum architecto quo possimus neque deserunt? Ex ducimus deserunt dignissimos odio.</p>
+                            <a href="">Link Here</a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!--contanct section-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub"> Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> matlaurio@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Matayas11/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram" target="_blank"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook-messenger" target="_blank"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter" target="_blank"></i></i></a>
+                    </div>
+                    <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="copyright">
+            <p>Mini Project A by Matias Laurio WD20P</p>
+        </div>
+    </div>
+
+         
+<!--animation of tabs-->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+   
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<!--para mag close-->
+<script>    
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+
+    </body>
+
+</html>
